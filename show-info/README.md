@@ -16,3 +16,6 @@ pnpm install
 
 pnpm tauri dev
 ```
+
+## Learn more about Tauri commands at 
+- [Tauri commands](https://tauri.app/develop/calling-rust/)
