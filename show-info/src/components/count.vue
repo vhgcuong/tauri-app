@@ -2,13 +2,16 @@
 import {ref} from 'vue'
 
 const count = ref(0)
+
 </script>
 
 <template>
-  <div class="h-full flex justify-center items-center">
-    <button class="bg-gradient-to-r from-blue-300 to-blue-800" @click="count++">
+  <div class="flex justify-center items-center flex-col">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 w-full rounded" @click="count++">+</button>
+    <div class="flex justify-center mx-1 my-1">
       Count is: {{ count }}
-    </button>
+    </div>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold ml-2 w-full rounded" @click="--count">-</button>
   </div>
 </template>
 
